@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: cors-proxy-server
+    env: node
+    plan: free
+    buildCommand: "npm install"
+    startCommand: "npm start"
+    envVars:
+      - key: BEARER_TOKEN
+        value: your_token_here
